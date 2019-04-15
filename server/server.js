@@ -17,7 +17,7 @@ app.use( require ('./routes/routes') )
 
 
 //Se realiza la conexion a la DB
-mongoose.connect(process.env.URLDB, {useNewUrlParser: true}, (err,res) => {
+mongoose.connect(process.env.URLDB, {useNewUrlParser: true,useCreateIndex: true}, (err,res) => {
 
 if(err) throw err;
 
