@@ -17,7 +17,7 @@ app.use( require ('./routes/routes') )
 
 
 //Se realiza la conexion a la DB
-mongoose.connect('mongodb://localhost:27017/school', {useNewUrlParser: true}, (err,res) => {
+mongoose.connect(process.env.URLDB, {useNewUrlParser: true}, (err,res) => {
 
 if(err) throw err;
 
