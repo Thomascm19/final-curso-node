@@ -14,7 +14,7 @@ hbs.registerPartials(__dirname + '../../../views/partials');
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-    res.redirect('/cursosDisponibles');
+    res.render('home');
 })
 app.get('/cursosDisponibles', (req, res) => {
     res.render('cursosDisponibles');
